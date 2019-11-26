@@ -1,15 +1,15 @@
 Online book store.
 
-Stack:
+**Stack:**
 
-React
-React-Redux
-Redux
-Redux-Thunk
-React-Logger
-Axios
-Lodash
-Semantic-UI-React
-Semantic-UI-CSS
+* React
+* React-Redux
+* Redux
+* Redux-Thunk
+* React-Logger
+* Axios
+* Lodash
+* Semantic-UI-React
+* Semantic-UI-CSS
 
 
