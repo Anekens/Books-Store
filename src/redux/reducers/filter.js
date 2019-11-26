@@ -6,7 +6,7 @@ const initialState = {
   filterBy: 'all',
 };
 
-export default (state = initialState, action) => {
+const filterReducer =  (state = initialState, action) => {
   switch (action.type) {
     case SET_QUERY:
       return {
@@ -32,4 +32,7 @@ export const setSearchQuery = value => ({
   type: SET_QUERY,
   payload: value,
 });
+
+
+export default filterReducer;
 

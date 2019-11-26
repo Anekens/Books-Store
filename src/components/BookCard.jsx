@@ -5,7 +5,7 @@ const BookCard = (book) => {
    return (
     <Card>
       <div className="card-image">
-        <Image src={book.image} />
+        <Image src={book.imageLink} />
       </div>
       <Card.Content>
         <Card.Header>{book.title}</Card.Header>
@@ -15,12 +15,12 @@ const BookCard = (book) => {
       </Card.Content>
       <Card.Content extra>
         <a>
-          <Icon name="rub" />
+          <Icon name="dollar" />
           {book.price}
         </a>
       </Card.Content>
       <Button onClick={book.addToCart.bind(this, book)}>
-        Добавить в корзину {book.addedCount > 0 && `(${book.addedCount})`}
+          Add to cart {book.addedCount > 0 && `(${book.addedCount})`}
       </Button>
     </Card>
   );

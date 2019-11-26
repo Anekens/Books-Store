@@ -3,11 +3,11 @@ const SET_IS_READY = 'BooksStore/redux/reducers/SET-IS-READY';
 
 
 const initialState = {
-  isReady: false,
-  items: null
+   isReady: false,
+  items: []
 };
 
-export default (state = initialState, action) => {
+const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_BOOKS:
       return {
@@ -28,3 +28,5 @@ export const setBooks = books => ({
   type: SET_BOOKS,
   payload: books
 });
+
+export default  booksReducer;
