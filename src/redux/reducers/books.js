@@ -4,7 +4,7 @@ const SET_IS_READY = 'BooksStore/redux/reducers/SET-IS-READY';
 
 const initialState = {
    isReady: false,
-  items: []
+  items:[]
 };
 
 const booksReducer = (state = initialState, action) => {

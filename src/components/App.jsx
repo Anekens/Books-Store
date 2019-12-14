@@ -7,7 +7,8 @@ import Menu from './MenuContainer';
 
 class App extends Component {
   componentWillMount() {
-      axios.get('/books.json').then(res => {
+      axios.get('https://raw.githubusercontent.com/PavelMilenki/BooksStore/master/public/books.json')
+          .then(res => {
           this.props.setBooks(res.data);
       })
   }
@@ -20,7 +21,7 @@ class App extends Component {
         <Filter/>
         <Card.Group itemsPerRow={4}>
           {!isReady
-            ? 'Loading'
+            ? 'Loading...'
             : books.map((book, i) => <BookCard key={i} {...book} />)}
         </Card.Group>
       </Container>
