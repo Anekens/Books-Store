@@ -5,6 +5,35 @@ body {
 .menu {
   margin-bottom: 20px;
 }
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  padding: 0;
+}
+
+.books {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  padding: 10px;
+}
+.ui.cards {
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .popup {
   max-width: 400px !important;
