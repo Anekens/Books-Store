@@ -1,4 +1,4 @@
-Online book store.
+Demo: https://pavelmilenki.github.io/BooksStore/
 
 **Stack:**
 

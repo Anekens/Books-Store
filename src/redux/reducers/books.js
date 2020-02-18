@@ -10,6 +10,7 @@ const initialState = {
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_BOOKS:
+      debugger
       return {
         ...state,
         items: action.payload,
